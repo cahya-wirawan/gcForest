@@ -5,7 +5,7 @@ try:
     import pypandoc
     long_description = pypandoc.convert('README.md', 'rst')
 except ImportError:
-    long_description = open('README.md').read()
+    long_description = open('README.md', encoding="utf-8").read()
 
 __version__ = "1.1.1"
 """
